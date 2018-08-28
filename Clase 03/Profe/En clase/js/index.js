@@ -90,3 +90,8 @@ for (var i = 0; i < pokemons.length; i++) {
 
   console.log('Nombre: ' + pokemon.name, 'Tipo: ' + pokemon.type)
 }
+<<<<<<< HEAD
+=======
+
+// Prueba
+>>>>>>> e59ace95890cdc3e42b5b60c291f48dda3c84d99
