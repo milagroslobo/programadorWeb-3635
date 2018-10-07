@@ -29,11 +29,19 @@ function studentSearch (search, studentsList) {
   for (var i = 0; i < studentsList.length; i++) {
     result = studentsList[i]
     if (search === result.firstName || search === result.lastName) {
-      orderNumber = i
+      return i
     }
   }
 
   return -1
 }
 
-console.log(studentSearch(search))
+var search = 'Ana'
+
+var result = studentSearch(search, studentsList)
+
+if (result !== -1) {
+  console.log('El usuario ' + search + ' está en la posición ' + result)
+} else {
+  console.log('No se encontro el usuario ' + search)
+}
